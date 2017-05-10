@@ -1,0 +1,148 @@
+/*html {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}*/
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+button {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.calc {
+  width: 380px;
+  height: 475px;
+  background: lightgray;
+}
+
+.calc-display {
+  background: #202020;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 200px;
+
+}
+
+.calc-display .content {
+  position: absolute;
+  font-size: 56px;
+  right: 0;
+  bottom: 0;
+}
+
+.calc-buttons {
+  position: relative;
+  height: 475px;
+  background: #000;
+  border: 1px solid #000;
+}
+
+
+button:active {
+  opacity: .9;
+  transition: opacity 0s;
+}
+
+
+
+#clear-button {
+  background: linear-gradient(to bottom, #cacbcc 0%, #c8cacb 100%) !important;
+  font-size: 36px;
+}
+
+.num-buttons-container {
+  position: relative;
+  width: 288px;
+  height: 475px;
+}
+
+.num-button {
+  width: 94px;
+  height: 94px;
+  transition: opacity .6s;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  color: #000;
+  font-size: 36px;
+  background: linear-gradient(to bottom, #d7d8da 0%, #d2d3d5 100%);
+  border-right: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+}
+
+.oper-buttons-container {
+  position: absolute;
+  top:0px;
+  right: 0px;
+  width: 96px;
+  height: 475px;
+
+}
+
+.zero-button {
+  width: 188px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+
+
+
+.oper-button {
+  position: relative;
+  width: 94px;
+  height: 94px;
+  font-size: 30px;
+  background: linear-gradient(to bottom, #f89312 0%, #f89212 100%);
+  border-bottom: 0.5px solid #000;
+  padding-bottom: 4px;
+}
+
+#oper-button-1 {
+  top: 0px;
+  right: 0px;
+}
+
+#oper-button-2 {
+  top: 95px;
+  right: 0px;
+}
+
+#oper-button-3 {
+  top: 191px;
+  right: 0px;
+}
+
+#oper-button-4 {
+  top: 286px;
+  right: 0px;
+}
+
+
+#equals-button {
+  /*top: 381px;
+  right: 0px;*/
+}
