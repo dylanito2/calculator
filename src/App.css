@@ -33,7 +33,7 @@ a {
 
 .calc {
   width: 380px;
-  height: 475px;
+  height: 450px;
   background: lightgray;
 }
 
@@ -57,7 +57,7 @@ a {
 
 .calc-buttons {
   position: relative;
-  height: 475px;
+  height: 473px;
   background: #000;
   border: 1px solid #000;
 }
@@ -71,6 +71,16 @@ button:active {
 
 
 #clear-button {
+  background: linear-gradient(to bottom, #cacbcc 0%, #c8cacb 100%) !important;
+  font-size: 36px;
+}
+
+#percent-button {
+  background: linear-gradient(to bottom, #cacbcc 0%, #c8cacb 100%) !important;
+  font-size: 36px;
+}
+
+#neg-button {
   background: linear-gradient(to bottom, #cacbcc 0%, #c8cacb 100%) !important;
   font-size: 36px;
 }
@@ -139,10 +149,4 @@ button:active {
 #oper-button-4 {
   top: 286px;
   right: 0px;
-}
-
-
-#equals-button {
-  /*top: 381px;
-  right: 0px;*/
 }
