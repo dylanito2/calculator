@@ -1,15 +1,11 @@
 import React from 'react'
 
 
-class OperatorButton extends React.Component {
+const OperatorButton = (props) => (
+  <button onClick={props.addOperator} id={'oper-button-' + props.index + 1} className={'oper-button'}>
+    {props.value}
+  </button>
+)
 
-  render() {
-    return (
-      <button onClick={this.props.addOperator} id={'oper-button-' + this.props.index + 1} className={'oper-button'}>
-        {this.props.value}
-      </button>
-    )
-  }
-}
 
 export default OperatorButton

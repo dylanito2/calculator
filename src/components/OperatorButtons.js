@@ -7,7 +7,7 @@ import CalculateButton from './CalculateButton'
 class OperatorButtons extends React.Component {
 
   renderOperatorButtons() {
-    let buttons = ['÷', '*', '-', '+']
+    let buttons = ['÷', 'x', '-', '+']
     return buttons.map((value, index) => {
       return <OperatorButton key={value} value={value} addOperator={this.props.addOperator.bind(null, value)} index={index} />
     })

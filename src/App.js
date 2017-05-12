@@ -23,6 +23,10 @@ class App extends Component {
     this.clear = this.clear.bind(this)
   }
 
+  negative() {
+
+  }
+
   clear() {
     this.setState({
       firstOperand: '',
@@ -97,7 +101,7 @@ class App extends Component {
       case '-':
       answer = first - second
       break;
-      case '*':
+      case 'x':
       answer = first * second
       break;
       case '÷':
@@ -106,9 +110,9 @@ class App extends Component {
       default:
       answer = 'err'
     }
-
+    answer = answer.toString().substring(0, 12)
     this.setState({
-      firstOperand: answer.toString(),
+      firstOperand: answer,
       operator: '',
       secondOperand: '',
       answer: true
